@@ -1,0 +1,198 @@
+/* join__inner */
+.join__inner {
+    padding: 7% 0;
+}
+.join__inner h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.join__inner .index {
+    text-align: center;
+}
+.join__inner .index ul {
+    position: relative;
+    display: inline-block;
+}
+.join__inner .index ul::before {
+    content: '';
+    background-color: var(--color__black);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -2px;
+    width: 100%;
+    height: 3px;
+    z-index: -1;
+}
+.join__inner .index li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--color__black);
+    background-color: var(--bg__pink);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.join__inner .index li:nth-child(2){
+    margin: 20px 30px;
+}
+.join__inner .index li.active {
+    background-color: var(--color__black);
+    color: var(--color__white);
+}
+.join__form {
+    padding: 10% 20%;
+}
+.join__form div {
+    margin-bottom: 3em;
+}
+.join__form div label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.join__form .over {
+    display: flex;
+    flex-wrap: wrap;
+}
+.join__form .over label {
+    width: 100%;
+}
+.join__form .over input {
+    width: 70%;
+}
+.join__form .over .youCheck {
+    width: 28%;
+    margin-left: 2%;
+    background-color: #FF7B92;
+    display: inline-block;
+    border-radius: 5px;
+    color: var(--color__white);
+    text-align: center;
+    padding-top: 15px;
+}
+.join__form .over .msg {
+    width: 100%;
+}
+.join__form .msg {
+    width: 100%;
+    padding: 7px 0;
+    font-weight: 700;
+    color: var(--bg__red);
+}
+.link {
+    display: inline-block;
+    position: relative;
+    background-color: var(--color__black);
+    border-radius: 99px;
+    padding: 1rem 3.5rem;
+    color: var(--color__white);
+    text-decoration: none;
+    font-size: 1.15rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.link:hover {
+    background-color: #FF7B92;
+    color: var(--color__white);
+    transition: all 0.5s;
+}
+.link svg {
+    position: absolute;
+    left: -350%;
+    top: -350%;
+    width: 800%;
+    height: 800%;
+    z-index: -1;
+}
+/* .join__form button {
+    display: block;
+    background-color: var(--color__black);
+    color: var(--color__white);
+    margin: 5em auto;
+    font-size: 1.2em;
+    padding: 0.4em 2em;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+.join__form button:hover {
+    background-color: #ff5959;
+    color: var(--color__white);
+} */
+
+/* join__agree */
+.join__agree {
+    padding: 5% 20%;
+}
+.join__agree > div {
+    padding: 5% 0;
+}
+.join__agree p {
+    background-color: var(--color__white);
+    padding: 3% 7% 3% 3%;
+    height: 300px;
+    overflow: auto;
+}
+.join__agree em {
+    color: var(--bg__red);
+}
+.agreeMsg {
+}
+.check {
+    padding: 7px 0;
+}
+.check input {
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+}
+.check label {
+    display: inline-block;
+    font-size: 18px;
+}
+.join__agree p::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+.join__agree p::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #A3A3A3; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+.join__agree p::-webkit-scrollbar-track {
+    background: rgba(194, 194, 194, 0.4);  /*스크롤바 뒷 배경 색상*/
+}
+
+
+
+/* media */
+@media (max-width: 600px){
+    .intro__inner.center .intro__text {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .join__form {
+        padding: 10% 10% 5% 10%;
+    }
+    .join__inner h2 {
+        font-size: 24px;
+    }
+    .join__form div label {
+        font-size: 1rem;
+    }
+    .join__form div input {
+        padding: 0.5em 1em;
+        font-size: 1rem;
+    }
+    .join__form button {
+        margin: 2em auto;
+        font-size: 1.3em;
+    }
+    .join__form div {
+        margin-bottom: 2em;
+    }
+}

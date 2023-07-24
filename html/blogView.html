@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body class="pink">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="../index.html" class="home"><span class="blind">메인으로</span></a>
+            </div>
+            <h1 class="logo">
+                <a href="main.html">Jull Coding Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="blog.html">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main" class="container">
+        <div class="blog__title">
+            <span class="cate">카테고리 제목</span>
+            <h2 class="title">블로그 게시글 타이틀</h2>
+            <div class="info">
+                <span class="author">글쓰니</span>
+                <span class="date">2023.05.16</span>
+                <div class="modify">
+                    <a href="#">수정</a>
+                    <a href="#">삭제</a>
+                </div>
+            </div>
+        </div>
+        <!-- blog__title -->
+
+        <div class="blog__inner">
+            <div class="left mt70">
+                <div class="blog__contents">
+                    <h3>블로그 제목</h3>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                    <p>블로그 내용들이 여기 들어가겠지!</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="blog__aside">
+                    <div class="intro">
+                        <picture class="img">
+                            <source srcset="assets/img/intro01.png, assets/img/intro01@2x.png 2x, assets/img/intro01@3x.png 3x" />
+                            <img src="assets/img/intro01.png" alt="소개이미지">
+                        </picture>
+                        <p class="text">
+                            끊임없이 새로운 지식과 기술을 습득하는 것을 좋아합니다^^
+                        </p>
+                    </div>
+                    <div class="cate">
+                        <h4>카테고리</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>인기글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 댓글</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog__title -->
+
+        <div class="blog__article">
+            <h3>관련글</h3>
+            <div class="cards__inner line0">
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog01.jpg, assets/img/blog01-min@2x.jpg 2x, assets/img/blog01-min@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog01-min.jpg" alt="소개이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩의 기초</h3>
+                        <p>코딩의 기초를 이해하지 못하는 초보자라면 코딩의 기초에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어의 기초가 포함될 수 있습니다. 또한 코딩의 기본 개념인 알고리즘과 자료 구조에 대한 게시물을 작성할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog02.jpg, assets/img/blog02-min@2x.jpg 2x, assets/img/blog02-min@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog02-min.jpg" alt="소개이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>웹 개발</h3>
+                        <p>웹 개발에 관심이 있다면 웹 개발에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript를 사용하여 웹 사이트를 만드는 방법에 대한 게시물이 포함될 수 있습니다. 또한 웹 개발에 사용되는 프레임워크와 라이브러리에 대한 게시물을 작성할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog03.jpg, assets/img/blog03-min@2x.jpg 2x, assets/img/blog03-min@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog03-min.jpg" alt="소개이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩의 윤리</h3>
+                        <p>코딩의 윤리에 관심이 있다면 코딩의 윤리에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 윤리적 코딩의 원칙과 윤리적으로 코딩하는 방법에 대한 게시물이 포함될 수 있습니다. 또한 코딩이 사람들에게 미칠 수 있는 잠재적인 부정적인 영향에 대한 게시물을 작성할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog04.jpg, assets/img/blog04-min@2x.jpg 2x, assets/img/blog04-min@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog04-min.jpg" alt="소개이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩의 미래</h3>
+                        <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog__article -->
+
+        <div class="blog__comment">
+            <h3>댓글</h3>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="../html/assets/img/bear.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickName">으르르릉 곰돌이</span>
+                    <span class="date">2023.05.22</span>
+                    <p class="msg">감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.</p>
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="../html/assets/img/bear.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickName">빡친 곰돌이</span>
+                    <span class="date">2023.05.22</span>
+                    <p class="msg">감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.</p>
+                    
+                    <div class="comment__modify">
+                        <label for="msg__modify" class="blind">수정 내용</label>
+                        <textarea name="msg__modify" id="msg__modify" rows="4" placeholder="수정할 내용을 적어주세요!"></textarea>
+                        <label for="commentPass" class="blind">비밀번호</label>
+                        <input type="password" id="commentPass" name="commentPass" placeholder="비밀번호">
+                        <button id="commentModifyCancel">취소</button>
+                        <button id="commentModifyButton">수정</button>
+                    </div>
+
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__view">
+                <div class="avatar">
+                    <img src="../html/assets/img/bear.jpg" alt="">
+                </div>
+                <div class="info">
+                    <span class="nickName">싸나운 곰돌이</span>
+                    <span class="date">2023.05.22</span>
+                    <p class="msg">감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.감사합니다.</p>
+                    
+                    <div class="comment__delete">
+                        <label for="commentPass" class="blind">비밀번호</label>
+                        <input type="password" id="commentPass" name="commentPass" placeholder="비밀번호">
+                        <button id="commentDeleteCancel">취소</button>
+                        <button id="commentDeleteButton">삭제</button>
+                    </div>
+                    
+                    <div class="del">
+                        <a href="#" class="comment__del__del">삭제</a>
+                        <a href="#" class="comment__del__mod">수정</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment__write">
+                <label for="commentPass">비밀번호</label>
+                <input type="password" id="commentPass" name="commentPass" placeholder="비밀번호">
+                <label for="commentName">이름</label>
+                <input type="text" id="commentName" name="commentName" placeholder="이름">  
+                <label for="commentWrite">댓글쓰기</label>
+                <textarea rows="4" id="commentWrite" name="commentWrite" placeholder="댓글을 써주세요!"></textarea>
+                <button type="submit" class="btnStyle3 mt10">댓글쓰기</button>
+            </div>
+            
+        </div>
+        <!-- blog__comment -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="footer__inner container mb100 btStyle">
+            <div>Copyright @ 2023 YeoDaSeul</div>
+            <div>blog by Jull</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</body>
+</html>

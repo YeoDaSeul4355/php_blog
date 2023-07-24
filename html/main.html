@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body class="pink">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="../index.html" class="home"><span class="blind">리스트 보기</span></a>
+            </div>
+            <h1 class="logo">
+                <a href="main.html">Jull Coding Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="blog.html">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main" class="container">
+        <div class="intro__inner bmStyle">
+            <picture class="intro__images">
+                <source srcset="assets/img/intro01.png, assets/img/intro01@2x.png 2x, assets/img/intro01@3x.png 3x" />
+                <img src="assets/img/intro01.png" alt="소개이미지">
+            </picture>
+            <p class="intro__text">
+                안녕하세요, 저는 열정과 도전 정신을 가진 개발자 여다슬입니다.
+                끊임없이 새로운 지식과 기술을 습득하는 것을 좋아하고 이를 토대로 최고의 결과물을 만들어내기 위해 항상 노력하고 있습니다.
+            </p>
+        </div>
+
+        <div class="blog__inner">
+            <div class="blog__wrap bmStyle">
+                <h2>Javascript Topic</h2>
+                <div class="cards__inner">
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog01.jpg, assets/img/blog01-min@2x.jpg 2x, assets/img/blog01-min@3x.jpg 3x" />
+                            <img src="assets/img/blog01-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 기초</h3>
+                            <p>코딩의 기초를 이해하지 못하는 초보자라면 코딩의 기초에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어의 기초가 포함될 수 있습니다. 또한 코딩의 기본 개념인 알고리즘과 자료 구조에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog02.jpg, assets/img/blog02-min@2x.jpg 2x, assets/img/blog02-min@3x.jpg 3x" />
+                            <img src="assets/img/blog02-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>웹 개발</h3>
+                            <p>웹 개발에 관심이 있다면 웹 개발에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript를 사용하여 웹 사이트를 만드는 방법에 대한 게시물이 포함될 수 있습니다. 또한 웹 개발에 사용되는 프레임워크와 라이브러리에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog03.jpg, assets/img/blog03-min@2x.jpg 2x, assets/img/blog03-min@3x.jpg 3x" />
+                            <img src="assets/img/blog03-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 윤리</h3>
+                            <p>코딩의 윤리에 관심이 있다면 코딩의 윤리에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 윤리적 코딩의 원칙과 윤리적으로 코딩하는 방법에 대한 게시물이 포함될 수 있습니다. 또한 코딩이 사람들에게 미칠 수 있는 잠재적인 부정적인 영향에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog04.jpg, assets/img/blog04-min@2x.jpg 2x, assets/img/blog04-min@3x.jpg 3x" />
+                            <img src="assets/img/blog04-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__wrap bmStyle">
+                <h2>Javascript Topic</h2>
+                <div class="cards__inner col2 line2">
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog01.jpg, assets/img/blog01-min@2x.jpg 2x, assets/img/blog01-min@3x.jpg 3x" />
+                            <img src="assets/img/blog01-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 기초</h3>
+                            <p>코딩의 기초를 이해하지 못하는 초보자라면 코딩의 기초에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어의 기초가 포함될 수 있습니다. 또한 코딩의 기본 개념인 알고리즘과 자료 구조에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog02.jpg, assets/img/blog02-min@2x.jpg 2x, assets/img/blog02-min@3x.jpg 3x" />
+                            <img src="assets/img/blog02-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>웹 개발</h3>
+                            <p>웹 개발에 관심이 있다면 웹 개발에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript를 사용하여 웹 사이트를 만드는 방법에 대한 게시물이 포함될 수 있습니다. 또한 웹 개발에 사용되는 프레임워크와 라이브러리에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog03.jpg, assets/img/blog03-min@2x.jpg 2x, assets/img/blog03-min@3x.jpg 3x" />
+                            <img src="assets/img/blog03-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 윤리</h3>
+                            <p>코딩의 윤리에 관심이 있다면 코딩의 윤리에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 윤리적 코딩의 원칙과 윤리적으로 코딩하는 방법에 대한 게시물이 포함될 수 있습니다. 또한 코딩이 사람들에게 미칠 수 있는 잠재적인 부정적인 영향에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog04.jpg, assets/img/blog04-min@2x.jpg 2x, assets/img/blog04-min@3x.jpg 3x" />
+                            <img src="assets/img/blog04-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__wrap bmStyle">
+                <h2>Javascript Topic</h2>
+                <div class="cards__inner col3 line3">
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog05.jpg, assets/img/blog05-min@2x.jpg 2x, assets/img/blog05-min@3x.jpg 3x" />
+                            <img src="assets/img/blog05-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 기초</h3>
+                            <p>코딩의 기초를 이해하지 못하는 초보자라면 코딩의 기초에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어의 기초가 포함될 수 있습니다. 또한 코딩의 기본 개념인 알고리즘과 자료 구조에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog06.jpg, assets/img/blog06-min@2x.jpg 2x, assets/img/blog06-min@3x.jpg 3x" />
+                            <img src="assets/img/blog06-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>웹 개발</h3>
+                            <p>웹 개발에 관심이 있다면 웹 개발에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript를 사용하여 웹 사이트를 만드는 방법에 대한 게시물이 포함될 수 있습니다. 또한 웹 개발에 사용되는 프레임워크와 라이브러리에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog07.jpg, assets/img/blog07-min@2x.jpg 2x, assets/img/blog07-min@3x.jpg 3x" />
+                            <img src="assets/img/blog07-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 윤리</h3>
+                            <p>코딩의 윤리에 관심이 있다면 코딩의 윤리에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 윤리적 코딩의 원칙과 윤리적으로 코딩하는 방법에 대한 게시물이 포함될 수 있습니다. 또한 코딩이 사람들에게 미칠 수 있는 잠재적인 부정적인 영향에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog08.jpg, assets/img/blog08-min@2x.jpg 2x, assets/img/blog08-min@3x.jpg 3x" />
+                            <img src="assets/img/blog08-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog05.jpg, assets/img/blog05-min@2x.jpg 2x, assets/img/blog05-min@3x.jpg 3x" />
+                            <img src="assets/img/blog05-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog06.jpg, assets/img/blog06-min@2x.jpg 2x, assets/img/blog06-min@3x.jpg 3x" />
+                            <img src="assets/img/blog06-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <span class="author">쭐레쭐레</span>
+                            <span class="date">2023.05.11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__wrap">
+                <h2>Javascript Topic</h2>
+                <div class="cards__inner col6 line2">
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog01.jpg, assets/img/blog01-min@2x.jpg 2x, assets/img/blog01-min@3x.jpg 3x" />
+                            <img src="assets/img/blog01-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 기초</h3>
+                            <p>코딩의 기초를 이해하지 못하는 초보자라면 코딩의 기초에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript와 같은 프로그래밍 언어의 기초가 포함될 수 있습니다. 또한 코딩의 기본 개념인 알고리즘과 자료 구조에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog02.jpg, assets/img/blog02-min@2x.jpg 2x, assets/img/blog02-min@3x.jpg 3x" />
+                            <img src="assets/img/blog02-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>웹 개발</h3>
+                            <p>웹 개발에 관심이 있다면 웹 개발에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 HTML, CSS 및 JavaScript를 사용하여 웹 사이트를 만드는 방법에 대한 게시물이 포함될 수 있습니다. 또한 웹 개발에 사용되는 프레임워크와 라이브러리에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog03.jpg, assets/img/blog03-min@2x.jpg 2x, assets/img/blog03-min@3x.jpg 3x" />
+                            <img src="assets/img/blog03-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 윤리</h3>
+                            <p>코딩의 윤리에 관심이 있다면 코딩의 윤리에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 윤리적 코딩의 원칙과 윤리적으로 코딩하는 방법에 대한 게시물이 포함될 수 있습니다. 또한 코딩이 사람들에게 미칠 수 있는 잠재적인 부정적인 영향에 대한 게시물을 작성할 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog04.jpg, assets/img/blog04-min@2x.jpg 2x, assets/img/blog04-min@3x.jpg 3x" />
+                            <img src="assets/img/blog04-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog05.jpg, assets/img/blog05-min@2x.jpg 2x, assets/img/blog05-min@3x.jpg 3x" />
+                            <img src="assets/img/blog05-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img">
+                            <source srcset="assets/img/blog06.jpg, assets/img/blog06-min@2x.jpg 2x, assets/img/blog06-min@3x.jpg 3x" />
+                            <img src="assets/img/blog06-min.jpg" alt="소개이미지">
+                        </figure>
+                        <div class="card__title">
+                            <h3>코딩의 미래</h3>
+                            <p>코딩의 미래에 관심이 있다면 코딩의 미래에 대한 게시물을 작성하는 것이 좋습니다. 여기에는 코딩이 세상을 어떻게 변화시킬 수 있는지, 코딩 분야에서 일할 수 있는 새로운 직업과 기회에 대한 게시물이 포함될 수 있습니다.</p>
+                        </div>
+                        <div class="card__info">
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- 
+            <div class="info__inner"><div> 각 페이지 소개 배너 
+            <div class="join__inner"><div> 회원가입 페이지
+            <div class="login__inner"><div> 로그인 페이지
+            <div class="board__inner"><div> 게시판 페이지
+            <div class="blog__inner"></div> 블로그 메인
+
+            <div class="sliders__inner"></div>    
+            <div class="banners__inner"></div>
+            <div class="cards__inner"></div>
+            <div class="images__inner"></div>
+            <div class="ads__inner"></div>
+            <div class="texts__inner"></div>
+            <div class="login__inner"></div>
+            <div class="join__inner"></div>
+            <div class="blog__inner"></div> 
+        -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="footer__inner container mb100 btStyle">
+            <div>Copyright @ 2023 YeoDaSeul</div>
+            <div><a href="adminAgree.html" class="btnStyle6">관리자 로그인</a><a href="mailto:dsy1943@naver.com"> blog by Jull</a></div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</body>
+</html>
